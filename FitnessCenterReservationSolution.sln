@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCR.WebService", "FCR.WebService\FCR.WebService.csproj", "{B42290A8-85E7-4643-9709-36B8511639E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCR.WebService.Tests", "FCR.WebService.Tests\FCR.WebService.Tests.csproj", "{EB1E1D30-65FB-4E9D-A0D9-80BCFFBFD24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCR.BLL.Tests", "FCR.BLL.Tests\FCR.BLL.Tests.csproj", "{9620A9ED-BD8A-41F1-93CE-8CC3ED41D681}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EB1E1D30-65FB-4E9D-A0D9-80BCFFBFD24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB1E1D30-65FB-4E9D-A0D9-80BCFFBFD24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB1E1D30-65FB-4E9D-A0D9-80BCFFBFD24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9620A9ED-BD8A-41F1-93CE-8CC3ED41D681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9620A9ED-BD8A-41F1-93CE-8CC3ED41D681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9620A9ED-BD8A-41F1-93CE-8CC3ED41D681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9620A9ED-BD8A-41F1-93CE-8CC3ED41D681}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
