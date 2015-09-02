@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FCR.DomainModel")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Pioneer Hi-Bred")]
+[assembly: AssemblyCompany("Two Guys Inc")]
 [assembly: AssemblyProduct("FCR.DomainModel")]
-[assembly: AssemblyCopyright("Copyright © Pioneer Hi-Bred 2015")]
+[assembly: AssemblyCopyright("Copyright © Two Guys Inc 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FCR.BLL.Tests")]
+[assembly: AssemblyTitle("FCR.WebUI.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Two Guys Inc")]
-[assembly: AssemblyProduct("FCR.BLL.Tests")]
+[assembly: AssemblyProduct("FCR.WebUI.Tests")]
 [assembly: AssemblyCopyright("Copyright © Two Guys Inc 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9620a9ed-bd8a-41f1-93ce-8cc3ed41d681")]
+[assembly: Guid("4489701e-3fe9-4e0c-9447-b9a292fdce0d")]
 
 // Version information for an assembly consists of the following four values:
 //
