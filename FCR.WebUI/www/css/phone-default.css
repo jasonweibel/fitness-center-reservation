@@ -7,23 +7,17 @@ html {-webkit-text-size-adjust: none; }
 
 /*-----BODY -----*/
 body {
-	background-color: #E6E1D8;
+	background-color: #3D2525;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;	/*also loaded 600 for bold*/
-	color: #494948;
+	color: #3D2525;
 }
 
-/*-----COLOR BAR -----*/
-#colorbar {
-	height: 4px;
-	width: 100%;
-	background-color: #A68C2A;
-}
 
 /*-----HEADER -----*/
 #headerWrapper {
-	background-color: #3B4044;
+	background-color: #3D2525;
 }
 header {
 	padding: 1em 2% .5em 2%;
@@ -31,26 +25,26 @@ header {
 
 header h1 {
 	font-size: 2.1em;
-	color: #FFE68E;
+	color: #F4DFBA;
 }
 header h2 {
 	font-size: .9em;
 	font-weight: 300;
-	color: #F3D255;
+	color: #F7D699;
 	margin-top: .75em;
 }
 
 /*-----BANNER -----*/	
 #banner {
-    background-image: url(../images/FeatureGraphic200H.png);
+	background-image: url(../img/FeatureGraphic640x200.png);
     background-repeat: no-repeat;
-    background-color: #3B4044;
+    background-color: #3D2525;
     height: 200px;
 }
 
 /*-----NAVIGATION -----*/	
 #navWrapper {
-	background-color: #A68C2A;	
+	background-color: #9B5F5E;	
 }
 nav ul li {
 	float: left;
@@ -61,10 +55,10 @@ nav ul li a {
 	display: block;
 	font-size: .9em;
 	font-weight:600;
-	color: #fff;
+	color: #F4DFBA;
 	text-decoration:none;
 	margin: .6em 0;
-	border-right: 3px solid rgba(255,255,255,0.3);
+	border-right: 3px solid rgba(0,0,0,0.2);
 	text-align: center;
 }	
 /*this turns off the last border*/
@@ -82,14 +76,14 @@ nav ul li:last-child a {
   clear: both;	
 }
 #contentWrapper h1 {
-	color:#A68C2A;
+	color:#3D2525;
 	font-size: 2em;
 	padding-top: 1em;
 	text-shadow: 1px 1px 2px #999;
 }
 
 #contentWrapper h2 {
-	color:#000;
+	color:#3D2525;
 	font-size: 1.5em;
 	padding-top: 1em;
 	text-shadow: 1px 1px 2px #999;
@@ -182,15 +176,15 @@ figure.col4-left img {
 }
 
 /*----- FOOTER -----*/
-#footerWrapper {background-color: #3B4044;}
+#footerWrapper {background-color: #3D2525;}
 footer {
 	clear: both;
 	font-size: .7em;
-	color: #fff;
+	color: #F7D699;
 	text-align: center;
 	padding: .6em;
 }
-footer a {color: #fff;}
+footer a {color: #F7D699;}
 
 
 /*----- OTHER -----*/

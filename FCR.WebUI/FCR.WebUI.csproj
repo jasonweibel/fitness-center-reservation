@@ -43,10 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Documents\Pallet.png" />
+    <Content Include="Documents\IMG_20151006_185454.jpg" />
     <Content Include="www\css\desktop.css" />
     <Content Include="www\css\phone-default.css" />
     <Content Include="www\css\reset.css" />
     <Content Include="www\css\tablet.css" />
+    <Content Include="www\img\FeatureGraphic1140x500.png" />
+    <Content Include="www\img\FeatureGraphic640x200.png" />
+    <Content Include="www\img\FeatureGraphic1140x400.png" />
     <Content Include="www\Index.html" />
     <Content Include="packages.config" />
     <None Include="www\Web.Debug.config">
@@ -64,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="www\app\" />
-    <Folder Include="www\img\" />
     <Folder Include="www\js\" />
   </ItemGroup>
   <PropertyGroup>
