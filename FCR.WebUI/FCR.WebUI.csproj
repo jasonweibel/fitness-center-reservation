@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Documents\FeatureGraphic1140x500.xcf" />
     <None Include="Documents\Pallet.png" />
     <None Include="Documents\IMG_20151006_185454.jpg" />
     <Content Include="www\css\desktop.css" />
