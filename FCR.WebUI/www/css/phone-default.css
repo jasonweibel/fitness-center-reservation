@@ -25,12 +25,13 @@ header {
 
 header h1 {
 	font-size: 2.1em;
-	color: #F4DFBA;
+	/*color: #F4DFBA;*/
+	color: #F2EEE8;
 }
 header h2 {
 	font-size: .9em;
 	font-weight: 300;
-	color: #F7D699;
+	color: #F4DFBA;
 	margin-top: .75em;
 }
 
@@ -180,11 +181,11 @@ figure.col4-left img {
 footer {
 	clear: both;
 	font-size: .7em;
-	color: #F7D699;
+	color: #F4DFBA;
 	text-align: center;
 	padding: .6em;
 }
-footer a {color: #F7D699;}
+footer a {color: #F4DFBA;}
 
 
 /*----- OTHER -----*/

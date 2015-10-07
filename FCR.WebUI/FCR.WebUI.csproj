@@ -44,7 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="Documents\Pallet.png" />
-    <Content Include="Documents\IMG_20151006_185454.jpg" />
+    <None Include="Documents\IMG_20151006_185454.jpg" />
     <Content Include="www\css\desktop.css" />
     <Content Include="www\css\phone-default.css" />
     <Content Include="www\css\reset.css" />
