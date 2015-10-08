@@ -71,11 +71,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="www\js\" />
-  </ItemGroup>
-  <ItemGroup>
+    <TypeScriptCompile Include="www\app\calendar\calendar.ts" />
     <TypeScriptCompile Include="www\app\services\fitnessApi.ts" />
+    <TypeScriptCompile Include="www\js\app.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

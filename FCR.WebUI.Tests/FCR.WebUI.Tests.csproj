@@ -61,9 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FCR.WebUI\FCR.WebUI.csproj">
+    <ProjectReference Include="..\FCR.WebUI\FCR.WebUI %28OLD%29.csproj">
       <Project>{0AE0F7ED-B331-4C10-990C-821B4F1D5E65}</Project>
-      <Name>FCR.WebUI</Name>
+      <Name>FCR.WebUI %28OLD%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

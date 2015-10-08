@@ -1,18 +1,29 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
+﻿<ion-view view-title="{{vm.CalendarName}}" ng-controller="calendarCtrl as vm">
+    <ion-content>
 
-    <!-- Angular -->
-    <script data-require="angular.js@2.0.0-alpha.31" data-semver="1.4.6" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+        <div class="header row">
+            <i class="icon ion-arrow-left-a col center" ng-click="vm.PreviousMonth()"></i>
+            <div class="col center my-date">{{vm.month}} {{vm.year}}</div>
+            <i class="icon ion-arrow-right-a col center" ng-click="vm.NextMonth()"></i>
+        </div>
 
-</head>
-<body>
-    <div ng-app>
-        {{ 123/3 }}
-    </div>
-    
+        <div class="row names">
+            <div class="col day">Sun</div>
+            <div class="col day">Mon</div>
+            <div class="col day">Tue</div>
+            <div class="col day">Wed</div>
+            <div class="col day">Thu</div>
+            <div class="col day">Fri</div>
+            <div class="col day">Sat</div>
+        </div>
 
-</body>
-</html>
+        <div class="row week" ng-repeat="week in vm.weeks">
+            <div class="col day"
+                 ng-class="{'month-other': ! day.isCurrentMonth, 'today': day.isToday}"
+                 ng-repeat="day in week.days"
+                 ng-click="vm.SelectDay(day)">
+                {{day.number}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
