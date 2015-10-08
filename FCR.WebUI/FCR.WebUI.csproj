@@ -17,12 +17,18 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <ExcludeFoldersFromDeployment>Exclude From Publish;</ExcludeFoldersFromDeployment>
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="Exclude From Publish\Graphic Designs\IMG_20151006_185454.jpg" />
+    <Content Include="Exclude From Publish\Graphic Designs\Pallet.png" />
+    <Content Include="img\FeatureGraphic1140x400.png" />
+    <Content Include="img\FeatureGraphic1140x500.png" />
+    <Content Include="img\FeatureGraphic640x200.png" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -30,6 +36,8 @@
     <TypeScriptCompile Include="app.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Exclude From Publish\Graphic Designs\FeatureGraphic1140x500.xcf" />
+    <None Include="Dev Local.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -37,6 +45,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
