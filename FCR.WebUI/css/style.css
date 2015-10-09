@@ -1,0 +1,121 @@
+﻿/* Empty. Add your own CSS if you like */
+.center {
+	text-align: center;
+}
+
+.day a:link, .day a:visited, .day a:hover, .day a:active, .day {
+	color: black;
+	text-decoration:none;
+    text-align: center;
+}
+
+.month-other, .month-other a:link, .month-other .today a:visited, .month-other .today a:hover, .month-other .today a:active {
+	color: lightgray;
+}
+
+.names {
+		background-color: ghostwhite;
+}
+
+.names .day  {
+	color: darkcyan;
+}
+
+.today a:link, .today a:visited, .today a:hover, .today a:active {
+	color: white;
+}
+
+.today {
+	background-color: darkseagreen;
+	box-shadow: inset 0px 0px 0px 1px Gray;
+}
+
+
+/*default look for the day view*/
+.day-cell {
+	background-color: #efe;
+	box-shadow: inset 0px 0px 0px 1px #eee;
+
+	background: -webkit-linear-gradient( #fff, #efe, #efe); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fff, #efe, #efe); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fff, #efe, #efe); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fff, #efe, #efe); /* Standard syntax */
+}
+
+.day-equ-reserved {
+	background-color: #ff4d4d;
+
+	background: -webkit-linear-gradient(pink, #ff4d4d, #ff4d4d); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(pink, #ff4d4d, #ff4d4d); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(pink, #ff4d4d, #ff4d4d); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(pink, #ff4d4d, #ff4d4d); /* Standard syntax */
+}
+
+.day-equ-user-reserved {
+	background-color: #6599e1;
+
+	background: -webkit-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lightBlue, #6599e1, #6599e1); /* Standard syntax */
+}
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.selected  {
+	background-color: #6599e1;
+	color: white;
+}
+
+.my-thumb {
+	height: 32px;
+	width: 32px;
+}
+
+.my-user {
+	height: 48px;
+	width: 48px;
+}
+
+.my-date {
+	font-size:x-large;
+}
+
+.user-info {
+	color: white;
+	font-size:x-large;
+	/*text-align: center;*/
+	
+	background-color: #6599e1;
+	
+	background: -webkit-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lightBlue, #6599e1, #6599e1); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lightBlue, #6599e1, #6599e1); /* Standard syntax */
+}
+
+.my-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

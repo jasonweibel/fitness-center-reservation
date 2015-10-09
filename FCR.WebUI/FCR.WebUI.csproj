@@ -23,11 +23,11 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="calendar\calendar.html" />
     <Content Include="css\desktop.css" />
     <Content Include="css\phone-default.css" />
     <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
     <Content Include="css\tablet.css" />
     <Content Include="Exclude From Publish\Graphic Designs\IMG_20151006_185454.jpg" />
     <Content Include="Exclude From Publish\Graphic Designs\Pallet.png" />
@@ -36,11 +36,12 @@
     <Content Include="img\FeatureGraphic1140x500.png" />
     <Content Include="img\FeatureGraphic640x200.png" />
     <Content Include="index.html" />
+    <Content Include="scripts\angular.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="calendar\calendarCtrl.ts" />
+    <TypeScriptCompile Include="calendar\CalendarCtrl.ts" />
     <TypeScriptCompile Include="services\fitnessApi.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />

@@ -11,9 +11,8 @@ body {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;	/*also loaded 600 for bold*/
-	color: #3D2525;
+	color: White;
 }
-
 
 /*-----HEADER -----*/
 #headerWrapper {
@@ -49,7 +48,7 @@ header h2 {
 }
 nav ul li {
 	float: left;
-	width: 25%;	/* Value is 100% divided by number of menu items*/
+	width: 33.33%;	/* Value is 100% divided by number of menu items*/
 }
 
 nav ul li a {
@@ -69,13 +68,14 @@ nav ul li:last-child a {
 
 /*-----CONTENT -----*/
 #contentWrapper  {
-	background-color: #fff;
+	background-color: black;
 }
 #contentWrapper .row:after {
   content: "";
   display: table;
   clear: both;	
 }
+
 #contentWrapper h1 {
 	color:#3D2525;
 	font-size: 2em;
@@ -187,6 +187,24 @@ footer {
 }
 footer a {color: #F4DFBA;}
 
+/*--- CALENDAR ---*/
+#calendar {
+
+}
+
+#calendar .row {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+#calendar .col {
+	display: table-cell;
+}
+#calendar .today {
+	background-color: darkseagreen;
+	box-shadow: inset 0px 0px 0px 1px Gray;
+}
+
 
 /*----- OTHER -----*/
 .clearfix:after {
@@ -194,3 +212,4 @@ footer a {color: #F4DFBA;}
   display: table;
   clear: both;
 }
+
