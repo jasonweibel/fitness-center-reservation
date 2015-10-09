@@ -1,23 +1,23 @@
 ﻿
 <div id="calendar" ng-controller="CalendarCtrl as vm">
 	<div class="header row">
-		<i class="icon ion-arrow-left-a col center" ng-click="vm.PreviousMonth()"></i>
-		<div class="col center my-date">{{vm.Month}} {{vm.Year}}</div>
-		<i class="icon ion-arrow-right-a col center" ng-click="vm.NextMonth()"></i>
+        <i class="icon ion-arrow-left-a col-3 center" ng-click="vm.PreviousMonth()"></i>
+        <div class="col-3 center my-date">{{vm.Month}} {{vm.Year}}</div>
+        <i class="icon ion-arrow-right-a col-3 center" ng-click="vm.NextMonth()"></i>
 	</div>
 
-	<div class="row names">
-		<div class="col day">Sun</div>
-		<div class="col day">Mon</div>
-		<div class="col day">Tue</div>
-		<div class="col day">Wed</div>
-		<div class="col day">Thu</div>
-		<div class="col day">Fri</div>
-		<div class="col day">Sat</div>
-	</div>
+    <div class="row">
+        <div class="col-7 name">Sun</div>
+        <div class="col-7 name">Mon</div>
+        <div class="col-7 name">Tue</div>
+        <div class="col-7 name">Wed</div>
+        <div class="col-7 name">Thu</div>
+        <div class="col-7 name">Fri</div>
+        <div class="col-7 name">Sat</div>
+    </div>
 
 	<div class="row week" ng-repeat="week in vm.Weeks">
-		<div class="col day"
+		<div class="col-7 day"
 				ng-class="{'month-other': ! day.IsCurrentMonth, 'today': day.IsToday}"
 				ng-repeat="day in week.Days"
 				ng-click="vm.SelectDay(day)">

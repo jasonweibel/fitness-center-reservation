@@ -13,12 +13,9 @@
 	color: lightgray;
 }
 
-.names {
-		background-color: ghostwhite;
-}
-
 .names .day  {
 	color: darkcyan;
+	background-color: ghostwhite;
 }
 
 .today a:link, .today a:visited, .today a:hover, .today a:active {
