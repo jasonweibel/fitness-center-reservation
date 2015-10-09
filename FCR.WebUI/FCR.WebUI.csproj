@@ -36,6 +36,7 @@
     <Content Include="img\FeatureGraphic1140x500.png" />
     <Content Include="img\FeatureGraphic640x200.png" />
     <Content Include="index.html" />
+    <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
