@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1140px) {
+
+
+
+/*-----INSIDE THE WRAPPERS-----*/
+	header, nav, .row, footer {
+		max-width: 1140px;
+		margin: 0 auto; /*centers everything on the page*/
+	}
+
+/*-----HEADER -----*/
+	header {
+		padding-top: 2em;
+		padding-bottom:1em;
+	}
+
+
+/*-----BANNER -----*/	
+#banner {
+    background-image: url(../img/FeatureGraphic1140x500.png);
+    height: 500px;
+    background-position: center;
+}
+
+/*-----NAVIGATION -----*/	
+nav ul {padding-left: 1%;}
+nav ul li a:hover{text-decoration:underline;}
+nav ul li {width: auto;}
+nav ul li a {padding: .2em 1.5em;}
+
+/*-----CONTENT -----*/
+
+/*---- COLUMNS ---*/
+.column-2 {
+	width: 16.666%;
+}
+
+/* PHOTO STYLING */
+figure.col4 {
+    width: 18%;
+}
+
+	
+	
+
+
+
+
+
+} /*end of the media query */

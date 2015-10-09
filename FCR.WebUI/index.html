@@ -4,12 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <title>TypeScript HTML App</title>
+
+    <!--Style sheets-->
     <link rel="stylesheet" href="app.css" type="text/css" />
+
+    <!--Application Script-->
     <script src="app.js"></script>
 </head>
-<body>
-    <h1>TypeScript HTML App</h1>
 
-    <div id="content"></div>
+<body ng-app="fitnessCenterReservation">
+    <h1>Index.html</h1>
+    <div ng-include="'home/home.html'"></div>
 </body>
 </html>

@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -24,8 +24,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="calendar\calendar.html" />
+    <Content Include="css\desktop.css" />
+    <Content Include="css\phone-default.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\tablet.css" />
     <Content Include="Exclude From Publish\Graphic Designs\IMG_20151006_185454.jpg" />
     <Content Include="Exclude From Publish\Graphic Designs\Pallet.png" />
+    <Content Include="home\home.html" />
     <Content Include="img\FeatureGraphic1140x400.png" />
     <Content Include="img\FeatureGraphic1140x500.png" />
     <Content Include="img\FeatureGraphic640x200.png" />
@@ -34,10 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="calendar\calendarCtrl.ts" />
+    <TypeScriptCompile Include="services\fitnessApi.ts" />
+    <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Exclude From Publish\Graphic Designs\FeatureGraphic1140x500.xcf" />
     <None Include="Dev Local.pubxml" />
+    <Content Include="tsd.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

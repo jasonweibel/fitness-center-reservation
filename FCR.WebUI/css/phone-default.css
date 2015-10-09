@@ -1,0 +1,196 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*-----BODY -----*/
+body {
+	background-color: #3D2525;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;	/*also loaded 600 for bold*/
+	color: #3D2525;
+}
+
+
+/*-----HEADER -----*/
+#headerWrapper {
+	background-color: #3D2525;
+}
+header {
+	padding: 1em 2% .5em 2%;
+}
+
+header h1 {
+	font-size: 2.1em;
+	/*color: #F4DFBA;*/
+	color: #F2EEE8;
+}
+header h2 {
+	font-size: .9em;
+	font-weight: 300;
+	color: #F4DFBA;
+	margin-top: .75em;
+}
+
+/*-----BANNER -----*/	
+#banner {
+	background-image: url(../img/FeatureGraphic640x200.png);
+    background-repeat: no-repeat;
+    background-color: #3D2525;
+    height: 200px;
+}
+
+/*-----NAVIGATION -----*/	
+#navWrapper {
+	background-color: #9B5F5E;	
+}
+nav ul li {
+	float: left;
+	width: 25%;	/* Value is 100% divided by number of menu items*/
+}
+
+nav ul li a {
+	display: block;
+	font-size: .9em;
+	font-weight:600;
+	color: #F4DFBA;
+	text-decoration:none;
+	margin: .6em 0;
+	border-right: 3px solid rgba(0,0,0,0.2);
+	text-align: center;
+}	
+/*this turns off the last border*/
+nav ul li:last-child a {
+	border-right: none;
+}	
+
+/*-----CONTENT -----*/
+#contentWrapper  {
+	background-color: #fff;
+}
+#contentWrapper .row:after {
+  content: "";
+  display: table;
+  clear: both;	
+}
+#contentWrapper h1 {
+	color:#3D2525;
+	font-size: 2em;
+	padding-top: 1em;
+	text-shadow: 1px 1px 2px #999;
+}
+
+#contentWrapper h2 {
+	color:#3D2525;
+	font-size: 1.5em;
+	padding-top: 1em;
+	text-shadow: 1px 1px 2px #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*---- COLUMNS ---*/
+.column-12, .column-6, .column-4, .column-3, .column-2b, .column-1, .column-7 {
+	padding: .5em 2%;
+}
+
+.column-1 {
+    width: 100%;
+}
+
+.column-2, .column-2b {
+    padding: 0;
+	width: 50%;
+	float: left;
+}
+.column-2 img {
+	width: 100%;
+}
+
+.column-7 {
+	width: 14%;
+	float: left;
+}
+.column-7 img {
+	width: 100%;
+}
+
+.color-1, .color-2 {
+	padding: .4em 1em .5em 1em;
+}
+
+.color-1 {
+	background-color: #f9f8c1;
+}
+
+.color-2 {
+	background-color: #ffddc1;
+}
+
+/* FEATURES */
+.features {
+    font-style: italic;
+    margin-top: 1em;
+}
+
+.features ul {
+    display: block;
+    margin-top: 1em;
+    margin-left: 1em;
+    font-style:normal;
+}
+
+/* RATINGS */
+#ratings {
+    margin: 0;
+    display: block;
+    background-color: #fff;
+}
+
+/* PHOTO STYLING */
+figure.col4 {
+    width: 31.333%;
+    margin-left: 2%;
+    float: right;
+    /*border: 1px solid #999;*/
+}
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    padding: .3em 0;
+}
+figure.col4 img {
+    width: 100%;
+}
+
+figure.col4-left {
+    width: 31.333%;
+    margin-right: 2%;
+    float: left;
+    /*border: 1px solid #999;*/
+}
+figure.col4-left img {
+    width: 100%;
+}
+
+/*----- FOOTER -----*/
+#footerWrapper {background-color: #3D2525;}
+footer {
+	clear: both;
+	font-size: .7em;
+	color: #F4DFBA;
+	text-align: center;
+	padding: .6em;
+}
+footer a {color: #F4DFBA;}
+
+
+/*----- OTHER -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
