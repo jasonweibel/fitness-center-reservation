@@ -1,9 +1,9 @@
 ﻿
 <div id="calendar" ng-controller="CalendarCtrl as vm">
 	<div class="header row">
-        <i class="icon ion-arrow-left-a col-3 center" ng-click="vm.PreviousMonth()"></i>
+        <i class="icon ion-arrow-left-a col-3 center vertical-center" ng-click="vm.PreviousMonth()">Prev</i>
         <div class="col-3 center my-date">{{vm.Month}} {{vm.Year}}</div>
-        <i class="icon ion-arrow-right-a col-3 center" ng-click="vm.NextMonth()"></i>
+        <i class="icon ion-arrow-right-a col-3 center vertical-center" ng-click="vm.NextMonth()">Next</i>
 	</div>
 
     <div class="row">

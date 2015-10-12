@@ -283,10 +283,19 @@ footer {
 		color: rgba(255,255,255,0.3);
 	}
 
+	#calendar .icon {
+		background-color: rgba(255,255,255,0.2);
+		font-size: .8em;
+	}
+
 
 /*----- OTHER -----*/
 .center {
 	text-align: center;
+}
+
+.vertical-center {
+	vertical-align: middle;
 }
 
 .clearfix:after {
