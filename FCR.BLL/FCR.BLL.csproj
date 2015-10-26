@@ -49,8 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CenterLogic.cs" />
+    <Compile Include="ICenterLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FCR.DAL\FCR.DAL.csproj">
+      <Project>{0d0deac3-91f8-4872-a90d-280ea753b0ac}</Project>
+      <Name>FCR.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCR.DomainModel\FCR.DomainModel.csproj">
+      <Project>{99fc2701-4130-48ed-8337-966f90bfeab9}</Project>
+      <Name>FCR.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
