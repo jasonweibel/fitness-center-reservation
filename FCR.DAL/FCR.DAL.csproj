@@ -64,6 +64,8 @@
     <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="DbModelConfigurationBuilder.cs" />
     <Compile Include="FCRContext.cs" />
+    <Compile Include="IAuditable.cs" />
+    <Compile Include="IFCRContext.cs" />
     <Compile Include="Migrations\201508311800542_InitialDbSetup.cs" />
     <Compile Include="Migrations\201508311800542_InitialDbSetup.Designer.cs">
       <DependentUpon>201508311800542_InitialDbSetup.cs</DependentUpon>

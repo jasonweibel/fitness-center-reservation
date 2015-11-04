@@ -49,7 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AllCalendarEvent.cs" />
+    <Compile Include="AllReservation.cs" />
+    <Compile Include="AllReservationsByCenterCount.cs" />
+    <Compile Include="AllResource.cs" />
+    <Compile Include="EquipmentForCenter.cs" />
+    <Compile Include="ExistingReservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

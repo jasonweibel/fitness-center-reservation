@@ -1,21 +1,16 @@
 ﻿using System.Linq;
 using System.Web.Http;
 using FCR.BLL;
-using FCR.DAL;
+using FCR.DomainModel;
 
 namespace FCR.WebService.Controllers
 {
     [RoutePrefix("api/centers")]
-    public class CentersController : BaseApiController
+    public class CenterController : BaseApiController
     {
         private readonly ICenterLogic _centerLogic;
 
-        public CentersController()
-        {
-            _centerLogic = new CenterLogic(new FCRContext());
-        }
-
-        public CentersController(ICenterLogic centerLogic)
+        public CenterController(ICenterLogic centerLogic)
         {
             _centerLogic = centerLogic;
         }
@@ -32,18 +27,21 @@ namespace FCR.WebService.Controllers
             return Ok(_centerLogic.GetCenterInfo().FirstOrDefault(x => x.Id == id));
         }
 
-        public IHttpActionResult Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]FitnessCenter value)
         {
+            _centerLogic.SaveCenterInfo(value);
             return Ok();
         }
 
-        public IHttpActionResult Put(int id, [FromBody]string value)
+        public IHttpActionResult Put(int id, [FromBody]FitnessCenter value)
         {
+            _centerLogic.SaveCenterInfo(value);
             return Ok();
         }
 
         public IHttpActionResult Delete(int id)
         {
+            _centerLogic.DeleteCenterInfo(id);
             return Ok();
         }
     }

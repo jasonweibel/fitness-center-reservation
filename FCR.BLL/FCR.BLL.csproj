@@ -53,10 +53,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CenterLogic.cs" />
-    <Compile Include="ICenterLogic.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DateLogic.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="EquipmentLogic.cs" />
+    <Compile Include="Mappers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationLogic.cs" />
+    <Compile Include="Reservations.cs" />
+    <Compile Include="UserLogic.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FCR.Core\FCR.Core.csproj">
+      <Project>{F70950AC-F2A9-44A8-A124-0FBE97E6B60F}</Project>
+      <Name>FCR.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FCR.DAL\FCR.DAL.csproj">
       <Project>{0d0deac3-91f8-4872-a90d-280ea753b0ac}</Project>
       <Name>FCR.DAL</Name>
@@ -64,6 +75,10 @@
     <ProjectReference Include="..\FCR.DomainModel\FCR.DomainModel.csproj">
       <Project>{99fc2701-4130-48ed-8337-966f90bfeab9}</Project>
       <Name>FCR.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCR.WebApiModel\FCR.WebApiModel.csproj">
+      <Project>{ab2d8a69-2676-4ced-ad1c-f03f6082c74d}</Project>
+      <Name>FCR.WebApiModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

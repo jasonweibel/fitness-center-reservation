@@ -7,25 +7,25 @@ namespace FCR.BLL
 {
     public class CenterLogic : ICenterLogic
     {
-        private FCR.DAL.FCRContext _dal;
+        private readonly DAL.IFCRContext _entities;
 
-        public CenterLogic(FCR.DAL.FCRContext dal)
+        public CenterLogic(DAL.IFCRContext entities)
         {
-            _dal = dal;
+            _entities = entities;
         }
 
         public List<FitnessCenter> GetCenterInfo()
         {
-            return _dal.FitnessCenters.ToList();
+            return _entities.FitnessCenters.ToList();
         }
 
         public void SaveCenterInfo(FitnessCenter center)
         {
-            var exists = _dal.FitnessCenters.FirstOrDefault(x => x.Id == center.Id);
+            var exists = _entities.FitnessCenters.FirstOrDefault(x => x.Id == center.Id);
 
             if (exists != null)
             {
-                _dal.FitnessCenters.Add(center);
+                _entities.FitnessCenters.Add(center);
             }
             else
             {
@@ -36,20 +36,32 @@ namespace FCR.BLL
                 exists.OperationTimeUnitStart = center.OperationTimeUnitStart;
                 exists.UnitIntervalMinutes = center.UnitIntervalMinutes;
             }
-            _dal.SaveChanges();
+            _entities.SaveChanges();
+        }
+
+        public void DeleteCenterInfo(int centerId)
+        {
+            var center = _entities.FitnessCenters.FirstOrDefault(x => x.Id == centerId);
+
+            if (center == null)
+            {
+                throw new ApplicationException("You are bad!");
+            }
+
+            DeleteCenterInfo(center);
         }
 
         public void DeleteCenterInfo(FitnessCenter center)
         {
-            var exists = _dal.FitnessCenters.FirstOrDefault(x => x.Id == center.Id);
+            var exists = _entities.FitnessCenters.FirstOrDefault(x => x.Id == center.Id);
 
             if (exists == null)
             {
                 throw new ApplicationException("You are bad!");
             }
 
-            _dal.FitnessCenters.Remove(center);
-            _dal.SaveChanges();
+            _entities.FitnessCenters.Remove(center);
+            _entities.SaveChanges();
         }
 
     }
