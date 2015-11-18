@@ -70,6 +70,10 @@
     <Compile Include="Migrations\201508311800542_InitialDbSetup.Designer.cs">
       <DependentUpon>201508311800542_InitialDbSetup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511181843392_AddMaxLength.cs" />
+    <Compile Include="Migrations\201511181843392_AddMaxLength.Designer.cs">
+      <DependentUpon>201511181843392_AddMaxLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +90,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201508311800542_InitialDbSetup.resx">
       <DependentUpon>201508311800542_InitialDbSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511181843392_AddMaxLength.resx">
+      <DependentUpon>201511181843392_AddMaxLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

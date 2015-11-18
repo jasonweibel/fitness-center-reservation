@@ -2,6 +2,7 @@ using Microsoft.Practices.Unity;
 using System.Web.Http;
 using FCR.BLL;
 using FCR.Core;
+using FCR.DAL;
 using Unity.WebApi;
 
 namespace FCR.WebService
@@ -14,6 +15,7 @@ namespace FCR.WebService
 
             container.RegisterType<ICenterLogic, CenterLogic>();
             container.RegisterType<IDate, DateLogic>();
+            container.RegisterType<IFCRContext, FCRContext>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

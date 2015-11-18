@@ -50,41 +50,41 @@ namespace FCR.BLL
             return ExistingReservationMapper(reservation, resource, resourceType, user, center);
         }
 
-        public List<ExistingReservation> GetAllExistingReservations()
-        {
-            //var results = new List<ExistingReservation>();
+        //public List<ExistingReservation> GetAllExistingReservations()
+        //{
+        //    //var results = new List<ExistingReservation>();
 
-            //var reservations = entities.allReservations
-            //    .Where(x => x.reservationDate >= _defaultStartDate && x.reservationDate < _defaultEndDate)
-            //    .ToList();
+        //    //var reservations = entities.allReservations
+        //    //    .Where(x => x.reservationDate >= _defaultStartDate && x.reservationDate < _defaultEndDate)
+        //    //    .ToList();
 
-            //reservations.ForEach(x =>
-            //{
-            //    MapReservationData(x, results);
-            //});
+        //    //reservations.ForEach(x =>
+        //    //{
+        //    //    MapReservationData(x, results);
+        //    //});
 
-            var reservation = _entities.Reservations;
-            var resource = _entities.Resources;
-            var center = _entities.FitnessCenters;
-            var sites = _entities.Sites;
-            var user = _entities.User;
-            var resourceType = _entities.ResourceTypes;
+        //    var reservation = _entities.Reservations;
+        //    var resource = _entities.Resources;
+        //    var center = _entities.FitnessCenters;
+        //    var sites = _entities.Sites;
+        //    var user = _entities.User;
+        //    var resourceType = _entities.ResourceTypes;
 
-            var reservations = from r in reservation
-                from re in resource.Where(x => x.Id == r.Resource.Id).DefaultIfEmpty()
-                from c in center.Where(x => x.Id == re.FitnessCenter.Id).DefaultIfEmpty()
-                from s in sites.Where(x => x.Id == c.Id).DefaultIfEmpty()
-                // TODO This is wrong too.
-                from u in user.Where(x => x.Id == r.User.Id).DefaultIfEmpty()
-                from rt in resourceType.Where(x => x.Id == re.ResourceType.Id)
-                select new List<ExistingReservation>()
-                {
-                    ExistingReservationMapper(r, re, rt, u, c)
-                };
+        //    var reservations = from r in reservation
+        //        from re in resource.Where(x => x.Id == r.Resource.Id).DefaultIfEmpty()
+        //        from c in center.Where(x => x.Id == re.FitnessCenter.Id).DefaultIfEmpty()
+        //        from s in sites.Where(x => x.Id == c.Id).DefaultIfEmpty()
+        //        // TODO This is wrong too.
+        //        from u in user.Where(x => x.Id == r.User.Id).DefaultIfEmpty()
+        //        from rt in resourceType.Where(x => x.Id == re.ResourceType.Id)
+        //        select new List<ExistingReservation>()
+        //        {
+        //            ExistingReservationMapper(r, re, rt, u, c)
+        //        };
 
-            // TODO - figure this out.
-            return reservations;
-        }
+        //    // TODO - figure this out.
+        //    return reservations;
+        //}
 
         //public List<ExistingReservation> GetExistingReservations(int fitnessCenterId)
         //{
