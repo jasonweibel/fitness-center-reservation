@@ -16,6 +16,8 @@ namespace FCR.WebService
             container.RegisterType<ICenterLogic, CenterLogic>();
             container.RegisterType<IDate, DateLogic>();
             container.RegisterType<IFCRContext, FCRContext>();
+            container.RegisterType<IEquipmentLogic, EquipmentLogic>();
+
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
