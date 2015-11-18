@@ -197,3 +197,4 @@ FakesAssemblies/
 
 # Not Needed for TypeScript projects
 *.js
+*.js.map

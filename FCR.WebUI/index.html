@@ -2,55 +2,55 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+	<meta charset="utf-8" />
+	<title>TypeScript HTML App</title>
 
-    <!--Style sheets-->
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/phone-default.css" rel="stylesheet" />
-    <link href="css/tablet.css" rel="stylesheet" />
-    <link href="css/desktop.css" rel="stylesheet" />
+	<!--Style sheets-->
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/phone-default.css" rel="stylesheet" />
+	<link href="css/tablet.css" rel="stylesheet" />
+	<link href="css/desktop.css" rel="stylesheet" />
 
-    <!--Application Script-->
-    <!--<script src="scripts/angular.min.js"></script>-->
-    <script src="scripts/angular.js"></script>
-    <script src="app.js"></script>
+	<!--Application Script-->
+	<!--<script src="scripts/angular.min.js"></script>-->
+	<script src="scripts/angular.js"></script>
+	<script src="app.js"></script>
 
-    <!--Controllers-->
-    <script src="calendar/calendarCtrl.js"></script>
+	<!--Controllers-->
+	<script src="calendar/calendarCtrl.js"></script>
 </head>
 
 <body ng-app="fitnessApp">
-    <div id="headerWrapper">
-        <header class="clearfix">
-            <hgroup>
-                <h1>Fitness Center Reservation</h1>
-                <h2>Reserve you fitness equipment</h2>
-            </hgroup>
-        </header>
-    </div> <!-- end of the header wrapper -->
+	<div id="headerWrapper">
+		<header class="clearfix">
+			<hgroup>
+				<h1>Fitness Center Reservation</h1>
+				<h2>Reserve you fitness equipment</h2>
+			</hgroup>
+		</header>
+	</div> <!-- end of the header wrapper -->
 
-    <div id="banner">
-    </div> <!-- end banner -->
+	<div id="banner">
+	</div> <!-- end banner -->
 
-    <div id="navWrapper">
-        <nav>
-            <ul id="myNav" class="clearfix">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">RESERVATIONS</a></li>
-                <li><a href="index.html">LOGIN</a></li>
-            </ul>
-        </nav>
-    </div> <!-- end of the navigation wrapper -->
+	<div id="navWrapper">
+		<nav>
+			<ul id="myNav" class="clearfix">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.html">RESERVATIONS</a></li>
+				<li><a href="index.html">LOGIN</a></li>
+			</ul>
+		</nav>
+	</div> <!-- end of the navigation wrapper -->
 
-    <div id="contentWrapper"
-         ng-include="'calendar/calendar.html'">
-    </div> <!-- end of the content wrapper -->
+	<div id="contentWrapper"
+		 ng-include="'calendar/calendar.html'">
+	</div> <!-- end of the content wrapper -->
 
-    <div id="footerWrapper">
-        <footer>
-            <p> Copyright &copy; 2015 &bull; Two Solve-A-Thon Guys &bull; Iowa</p>
-        </footer>
-    </div> <!-- end of the footer wrapper -->
+	<div id="footerWrapper">
+		<footer>
+			<p> Copyright &copy; 2015 &bull; Two Solve-A-Thon Guys &bull; Iowa</p>
+		</footer>
+	</div> <!-- end of the footer wrapper -->
 </body>
 </html>
